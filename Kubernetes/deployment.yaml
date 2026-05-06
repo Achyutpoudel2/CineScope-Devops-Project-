@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cinescope-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cinescope
+  template:
+    metadata:
+      labels:
+        app: cinescope
+    spec:
+      containers:
+        - name: cinescope
+          image: achyutpoudel0507/cinescope:latest
+          ports:
+            - containerPort: 80
+         
