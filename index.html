@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CineScope - Movie Mood Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>CineScope 🎬</h1>
+      <p class="subtitle">Search movies instantly — poster, rating, genre, plot, cast.</p>
+    </header>
+
+    <section class="search">
+      <input id="searchInput" type="text" placeholder="Type movie name (e.g., Inception)" />
+      <button id="searchBtn">Search</button>
+
+      <select id="moodSelect">
+        <option value="">— Or choose Mood —</option>
+        <option value="Comedy">Happy</option>
+        <option value="Romance">Romantic</option>
+        <option value="Horror">Scary</option>
+        <option value="Thriller">Thrilling</option>
+        <option value="Action">Action</option>
+        <option value="Drama">Drama</option>
+      </select>
+    </section>
+
+    <main id="result" class="result">
+      <p class="hint">Search a movie or pick a mood to get started.</p>
+    </main>
+
+    <footer>
+      <small>Data from OMDb API • Built for demo</small>
+    </footer>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
